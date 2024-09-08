@@ -31,10 +31,10 @@ class MumzworldAutomation:
         expect(self.page.locator('div.createAccountPage-contentContainer-hc_')).to_contain_text("Sign up to your mumzworld account")
 
     def fill_email(self, placeholder):
-        random_number = random.randint(1, 1000)
-        email = f"automation.user+{random_number}@ymail.com"
-        self.page.get_by_placeholder(placeholder).fill(email)
-        print(f"Filled email: {email}")
+            random_number = random.randint(1, 2000)
+            email = f"automation.user+{random_number}@ymail.com"
+            self.page.get_by_placeholder(placeholder).fill(email)
+            print(f"Filled email: {email}", flush=True)
 
     def sign_up(self, first_name, last_name, email_placeholder, password):
         self.page.get_by_label("First Name").click()
