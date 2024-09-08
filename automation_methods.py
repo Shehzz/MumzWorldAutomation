@@ -34,7 +34,7 @@ class MumzworldAutomation:
             random_number = random.randint(1, 2000)
             email = f"automation.user+{random_number}@ymail.com"
             self.page.get_by_placeholder(placeholder).fill(email)
-            print(f"Filled email: {email}", flush=True)
+            print(f"Filled email: {email}")
 
     def sign_up(self, first_name, last_name, email_placeholder, password):
         self.page.get_by_label("First Name").click()
