@@ -22,5 +22,6 @@ Follow the steps below to set up and run the script:
 
 To run the script that automates the email field interaction and other actions, simply execute the following command in your terminal:
 
-`pytest script.py`
-
+```
+pytest script.py`
+```
